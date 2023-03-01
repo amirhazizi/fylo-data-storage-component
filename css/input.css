@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* global css */
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
