@@ -8,6 +8,14 @@ html {
     font-size: 14px;
 }
 
+/* coolors */
+:root {
+    --cl-PaleBlue: hsl(243, 100%, 93%);
+    --cl-GrayishBlue: hsl(229, 7%, 55%);
+    --cl-DarkBlue: hsl(228, 56%, 26%);
+    --cl-VeryDarkBlue: hsl(229, 57%, 11%);
+}
+
 /* actual css */
 body {
     background: url('../images/bg-mobile.png') center/cover no-repeat;
@@ -20,5 +28,60 @@ main {
 }
 
 .upload {
-    border-radius: 15px 10rem 15px 15px;
+    border-radius: 1rem 8rem 1rem 1rem;
+}
+
+/* .document-btn {
+    padding: 1rem;
+} */
+
+.folder-btn {
+
+    padding: 1.1rem 1rem;
+}
+
+.upload-btn {
+    padding: 1.2rem 1rem;
+}
+
+.result-text {
+    font-size: .6rem;
+}
+
+/* slider */
+#slider {
+    -webkit-appearance: none;
+    padding: .15rem 0;
+    border-width: 3px;
+    outline: none;
+}
+
+#slider::after {
+    width: 83%;
+    -webkit-appearance: none;
+}
+
+
+
+#slider::-webkit-slider-thumb {
+    position: relative;
+    z-index: 2;
+    -webkit-appearance: none;
+    appearance: none;
+    width: .8rem;
+    height: .8rem;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+}
+
+#slider::-webkit-slider-thumb:hover {
+    opacity: .9;
+    filter: brightness(110%);
+}
+
+#slider::-webkit-slider-thumb:active {
+    background-blend-mode: overlay;
+    background-color: rgb(3, 150, 150);
+
 }

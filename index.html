@@ -22,30 +22,60 @@
     <title>Frontend Mentor | Fylo data storage component</title>
   </head>
   <body class="h-screen grid place-items-center">
-    <main class="text-white">
-      <div class="upload p-10 bg-cl_DarkBlue space-y-10">
+    <main class="text-white space-y-5 py-20">
+      <!-- upload content -->
+      <div class="upload p-14 px-12 bg-cl_DarkBlue space-y-10">
         <img src="./images/logo.svg" alt="" />
         <ul class="flex space-x-5 items-center">
           <li>
-            <button class="bg-cl_VeryDarkBlue rounded-xl p-4">
+            <button class="document-btn bg-cl_VeryDarkBlue rounded-xl p-4">
               <img src="./images/icon-document.svg" alt="" />
             </button>
           </li>
           <li>
-            <button class="bg-cl_VeryDarkBlue rounded-xl p-4">
+            <button class="folder-btn bg-cl_VeryDarkBlue rounded-xl p-4">
               <img src="./images/icon-folder.svg" alt="" />
             </button>
           </li>
           <li>
-            <button class="bg-cl_VeryDarkBlue rounded-xl p-4">
+            <button class="upload-btn bg-cl_VeryDarkBlue rounded-xl">
               <img src="./images/icon-upload.svg" alt="" />
             </button>
           </li>
         </ul>
       </div>
-      <div></div>
+      <!-- result -->
+      <div
+        class="relative pb-12 pt-8 px-12 bg-cl_DarkBlue rounded-2xl text-cl_PaleBlue"
+      >
+        <p class="text-md text-center mb-4">
+          You’ve used <span class="text-white px-px">815 GB</span> of your
+          storage
+        </p>
+        <input
+          id="slider"
+          class="w-full relative bg-cl_VeryDarkBlue rounded-xl overflow-hidden border-cl_VeryDarkBlue bg-opacity-50 border-opacity-10 after:bg-gradient-to-r after:from-cl_gradientLeft after:to-cl_gradientRight after:h-full after:absolute after:top-0 after:left-0 after:rounded-xl"
+          type="range"
+          min="0"
+          max="1000"
+          value="815"
+          readonly
+        />
+        <div class="flex justify-between text-sm text-white mt-2">
+          <p>0 GB</p>
+          <p>1000 GB</p>
+        </div>
+        <!-- float div -->
+        <div
+          class="flex items-center space-x-2 absolute left-1/2 bottom-0 translate-y-1/2 -translate-x-1/2 py-3 px-6 font-bold bg-white rounded-lg"
+        >
+          <h1 class="text-4xl text-black">185</h1>
+          <p class="text-cl_GrayishBlue text-xs uppercase tracking-wide">
+            GB Left
+          </p>
+        </div>
+      </div>
     </main>
-    <!-- You’ve used 815 GB of your storage 185 GB Left 0 GB 1000 GB -->
 
     <!-- footer -->
     <footer
