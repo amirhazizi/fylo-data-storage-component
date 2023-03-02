@@ -21,37 +21,49 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Frontend Mentor | Fylo data storage component</title>
   </head>
-  <body class="h-screen grid place-items-center">
-    <main class="text-white space-y-5 py-20">
+  <body class="min-h-screen grid place-items-center">
+    <main class="text-white space-y-5">
       <!-- upload content -->
       <div class="upload p-14 px-12 bg-cl_DarkBlue space-y-10">
+        <!-- logo -->
         <img src="./images/logo.svg" alt="" />
+        <!-- icons -->
         <ul class="flex space-x-5 items-center">
+          <!-- document icon -->
           <li>
             <button class="document-btn bg-cl_VeryDarkBlue rounded-xl p-4">
               <img src="./images/icon-document.svg" alt="" />
             </button>
           </li>
+          <!-- end of document icon -->
+
+          <!-- folder icon -->
           <li>
             <button class="folder-btn bg-cl_VeryDarkBlue rounded-xl p-4">
               <img src="./images/icon-folder.svg" alt="" />
             </button>
           </li>
+          <!-- end of folder icon -->
+
+          <!-- upload icon -->
           <li>
             <button class="upload-btn bg-cl_VeryDarkBlue rounded-xl">
               <img src="./images/icon-upload.svg" alt="" />
             </button>
           </li>
+          <!-- end of upload icon -->
         </ul>
       </div>
       <!-- result -->
       <div
         class="relative pb-12 pt-8 px-12 bg-cl_DarkBlue rounded-2xl text-cl_PaleBlue"
       >
+        <!-- text -->
         <p class="text-md text-center mb-4">
           You’ve used <span class="text-white px-px">815 GB</span> of your
           storage
         </p>
+        <!-- slider range -->
         <input
           id="slider"
           class="w-full relative bg-cl_VeryDarkBlue rounded-xl overflow-hidden border-cl_VeryDarkBlue bg-opacity-50 border-opacity-10 after:bg-gradient-to-r after:from-cl_gradientLeft after:to-cl_gradientRight after:h-full after:absolute after:top-0 after:left-0 after:rounded-xl"
@@ -61,6 +73,7 @@
           value="815"
           readonly
         />
+        <!-- under slider text -->
         <div class="flex justify-between text-sm text-white mt-2">
           <p>0 GB</p>
           <p>1000 GB</p>
@@ -76,7 +89,6 @@
         </div>
       </div>
     </main>
-
     <!-- footer -->
     <footer
       class="fixed bottom-0 left-1/2 -translate-x-1/2 py-1 px-2 text-center text-xs font-medium rounded-t-xl bg-white"

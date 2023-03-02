@@ -61,8 +61,6 @@ main {
     -webkit-appearance: none;
 }
 
-
-
 #slider::-webkit-slider-thumb {
     position: relative;
     z-index: 2;
