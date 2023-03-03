@@ -10,6 +10,10 @@ html {
 
 /* coolors */
 :root {
+    --gradient: linear-gradient(hsl(6, 100%, 80%),
+            hsl(335, 100%, 65%));
+    /* cl_gradientLeft: hsl(6, 100%, 80%),
+            cl_gradientRight: hsl(335, 100%, 65%), */
     --cl-PaleBlue: hsl(243, 100%, 93%);
     --cl-GrayishBlue: hsl(229, 7%, 55%);
     --cl-DarkBlue: hsl(228, 56%, 26%);
@@ -19,12 +23,23 @@ html {
 /* actual css */
 body {
     background: url('../images/bg-mobile.png') center/cover no-repeat;
+}
+
+@media (min-width:976px) {
+    body {
+        background: var(--cl-VeryDarkBlue) url('../images/bg-desktop.png') bottom/contain no-repeat;
+        /* background-position: ; */
+    }
+
+    /* .float-div {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 83% 80%, 0 80%);
+    } */
 
 }
 
 main {
     width: 90vw;
-    max-width: 450px;
+    max-width: 940px;
 }
 
 .upload {
@@ -54,23 +69,25 @@ main {
     padding: .15rem 0;
     border-width: 3px;
     outline: none;
+    background: linear-gradient(to right, hsl(6, 100%, 80%),
+            hsl(335, 100%, 65%) 81%, var(--cl-VeryDarkBlue) 81%);
+    border: 3px solid var(--cl-VeryDarkBlue);
 }
 
-#slider::after {
-    width: 83%;
-    -webkit-appearance: none;
-}
+
 
 #slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
     position: relative;
     z-index: 2;
-    -webkit-appearance: none;
     appearance: none;
-    width: .8rem;
-    height: .8rem;
+    width: .9rem;
+    height: .9rem;
     border-radius: 50%;
     background: white;
     cursor: pointer;
+    outline: 2px solid hsl(335, 100%, 65%);
+
 }
 
 #slider::-webkit-slider-thumb:hover {
@@ -82,4 +99,8 @@ main {
     background-blend-mode: overlay;
     background-color: rgb(3, 150, 150);
 
+}
+
+.float-div::after {
+    clip-path: polygon(100% 0, 0 0, 100% 100%);
 }
