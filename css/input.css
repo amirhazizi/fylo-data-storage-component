@@ -46,9 +46,9 @@ main {
     border-radius: 1rem 8rem 1rem 1rem;
 }
 
-/* .document-btn {
-    padding: 1rem;
-} */
+.document-btn {
+    padding: 1rem 1.15rem;
+}
 
 .folder-btn {
 

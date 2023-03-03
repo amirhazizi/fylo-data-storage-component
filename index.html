@@ -23,17 +23,21 @@
   </head>
   <body class="min-h-screen grid place-items-center">
     <main
-      class="text-white space-y-5 lg:flex lg:space-x-10 lg:justify-between lg:items-end"
+      class="text-white space-y-5 md:flex md:space-x-10 md:space-y-0 md:justify-between md:items-end"
     >
       <!-- upload content -->
-      <div class="upload p-14 px-12 bg-cl_DarkBlue space-y-10 lg:w-1/3">
+      <div
+        class="upload p-14 px-12 bg-cl_DarkBlue space-y-10 md:w-1/2 lg:w-2/5"
+      >
         <!-- logo -->
         <img src="./images/logo.svg" alt="" />
         <!-- icons -->
         <ul class="flex space-x-5 items-center">
           <!-- document icon -->
           <li>
-            <button class="document-btn bg-cl_VeryDarkBlue rounded-xl p-4">
+            <button
+              class="document-btn bg-cl_VeryDarkBlue rounded-xl p-4 transition-all hover:bg-opacity-50"
+            >
               <img src="./images/icon-document.svg" alt="" />
             </button>
           </li>
@@ -41,7 +45,9 @@
 
           <!-- folder icon -->
           <li>
-            <button class="folder-btn bg-cl_VeryDarkBlue rounded-xl p-4">
+            <button
+              class="folder-btn bg-cl_VeryDarkBlue rounded-xl p-4 transition-all hover:bg-opacity-50"
+            >
               <img src="./images/icon-folder.svg" alt="" />
             </button>
           </li>
@@ -49,7 +55,9 @@
 
           <!-- upload icon -->
           <li>
-            <button class="upload-btn bg-cl_VeryDarkBlue rounded-xl">
+            <button
+              class="upload-btn bg-cl_VeryDarkBlue rounded-xl transition-all hover:bg-opacity-50"
+            >
               <img src="./images/icon-upload.svg" alt="" />
             </button>
           </li>
@@ -58,7 +66,7 @@
       </div>
       <!-- result -->
       <div
-        class="relative pb-12 pt-8 px-12 bg-cl_DarkBlue rounded-2xl text-cl_PaleBlue lg:w-2/3 md:p-10"
+        class="relative pb-12 pt-8 px-12 bg-cl_DarkBlue rounded-2xl text-cl_PaleBlue md:w-1/2 lg:w-3/5 md:p-10"
       >
         <!-- text -->
         <p class="text-md text-center mb-4 lg:text-left lg:text-lg">
