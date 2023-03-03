@@ -19,7 +19,7 @@ window.addEventListener("DOMContentLoaded", () => {
     intalValue += incrementSlider
     intalValueText += increment
     if (intalValue > value) {
-      document.body.style.setProperty("--slidervalue", `${value}%`)
+      document.body.style.setProperty("--slidervalue", `${value - 0.65}%`)
       slider.value = sliderValue
       storageUsage.textContent = `${sliderValue}GB`
       storageRemaine.textContent = slider.max - sliderValue
