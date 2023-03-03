@@ -70,7 +70,7 @@ main {
     border-width: 3px;
     outline: none;
     background: linear-gradient(to right, hsl(6, 100%, 80%),
-            hsl(335, 100%, 65%) 81%, var(--cl-VeryDarkBlue) 81%);
+            hsl(335, 100%, 65%) var(--slidervalue), var(--cl-VeryDarkBlue) var(--slidervalue));
     border: 3px solid var(--cl-VeryDarkBlue);
 }
 
