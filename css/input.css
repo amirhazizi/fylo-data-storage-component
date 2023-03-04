@@ -25,17 +25,7 @@ body {
     background: url('../images/bg-mobile.png') center/cover no-repeat;
 }
 
-@media (min-width:976px) {
-    body {
-        background: var(--cl-VeryDarkBlue) url('../images/bg-desktop.png') bottom/contain no-repeat;
-        /* background-position: ; */
-    }
 
-    /* .float-div {
-        clip-path: polygon(0% 0%, 100% 0%, 100% 99%, 83% 80%, 0 80%);
-    } */
-
-}
 
 main {
     width: 90vw;
@@ -66,7 +56,7 @@ main {
 /* slider */
 #slider {
     -webkit-appearance: none;
-    padding: .15rem 0;
+    padding: .1rem 0;
     border-width: 3px;
     outline: none;
     background: linear-gradient(to right, hsl(6, 100%, 80%),
@@ -90,17 +80,18 @@ main {
 
 }
 
-#slider::-webkit-slider-thumb:hover {
-    opacity: .9;
-    filter: brightness(110%);
-}
-
-#slider::-webkit-slider-thumb:active {
-    background-blend-mode: overlay;
-    background-color: rgb(3, 150, 150);
-
-}
 
 .float-div::after {
     clip-path: polygon(100% 0, 0 0, 100% 100%);
+}
+
+/* media queris */
+@media (min-width:976px) {
+    body {
+        background: var(--cl-VeryDarkBlue) url('../images/bg-desktop.png') bottom/contain no-repeat;
+    }
+
+    #slider {
+        padding: .09rem 0;
+    }
 }
